@@ -4,7 +4,7 @@ A Flutter package to launch and integrate a **custom vertical calendar** within 
 
 📹 **Demo:** [YouTube Video](https://www.youtube.com/shorts/bCoXKYM4-Uo)  
 📦 **GitHub Repo:** [custom_vertical_calendar](https://github.com/savitashukla/custom_vertical_calendar.git)
-
+![Vertical Calendar Demo](assets/calendar.gif)
 
 
 ---
