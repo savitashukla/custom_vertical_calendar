@@ -1,6 +1,6 @@
 name: custom_vertical_calendar
 description: A Flutter packages to launch app custom vertical calendar.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/savitashukla/custom_vertical_calendar.git
 
 
@@ -30,7 +30,7 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
-flutter:
+
 
   # To add assets to your package, add an assets section, like this:
   # assets:

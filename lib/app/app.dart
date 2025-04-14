@@ -6,14 +6,14 @@ import '../resources/app_colors.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
-class AppWidget extends StatefulWidget {
-  const AppWidget({super.key});
+class CallCalendar extends StatefulWidget {
+  const CallCalendar({super.key});
 
   @override
-  State<AppWidget> createState() => _AppWidgetState();
+  State<CallCalendar> createState() => _CallCalendarState();
 }
 
-class _AppWidgetState extends State<AppWidget> with WidgetsBindingObserver {
+class _CallCalendarState extends State<CallCalendar> with WidgetsBindingObserver {
   @override
   void initState() {
     WidgetsBinding.instance.addObserver(this);

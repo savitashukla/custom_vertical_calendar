@@ -2,9 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import '../../features/utils/helper_widgets.dart';
-import '../../routes/routes.dart';
-
 class CycleTrackController extends GetxController {
   late ItemScrollController cycleTrackScrollController = ItemScrollController();
 
@@ -98,12 +95,6 @@ class CycleTrackController extends GetxController {
       debugPrint(
           'The given date belongs to the previous month or two months ago.');
     }
-    /*else if ((givenYear == previousMonthYear &&
-            givenMonth == previousMonth) ) {
-      mapData.add(3);
-      debugPrint(
-          'The given date belongs to the previous month or two months ago.');
-    }*/
     else if ((givenYear == twoMonthsAgoYear && givenMonth == twoMonthsAgo)) {
       mapData.add(3);
       debugPrint(
@@ -114,30 +105,5 @@ class CycleTrackController extends GetxController {
     }
 
     return mapData;
-  }
-
-  isDateBelongsToTwoMonths(BuildContext context) {
-    if (checkBoxValues.isNotEmpty) {
-      List<DateTime> dates = [];
-      checkBoxValues.forEach((dateString, isSelected) {
-        if (isSelected) {
-          dates.add(getDateStringCon(dateString));
-        }
-      });
-
-      // Extract the months from the selected dates
-      Set<String> months =
-          dates.map((date) => "${date.year}${date.month}").toSet();
-      print(months.toString());
-      // Check if the selected dates belong to two consecutive months and all values are true
-      if (months.length >= 2) {
-        Navigator.pushNamed(context, Routes.cycleTrackSecondPage);
-      } else {
-        HelperWidget().flutterCustomToast("Select 2 Month Date");
-      }
-    } else {
-      HelperWidget().flutterCustomToast("Select 2 Month Date");
-    }
-    // Extract the selected dates from the map where the values are true
   }
 }
